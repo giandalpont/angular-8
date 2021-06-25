@@ -1,0 +1,15 @@
+<!-- <div *ngFor="let album of albums">
+    <img src="https://loremflickr.com/359/218/sea?lock={{ album.id }}" class="img-fluid" alt="">
+    <h2>{{ album.id }}</h2>
+    <p>{{ album.title }}</p>
+</div> -->
+<div class="row mt-4">
+    <div class="col-md-4" *ngFor="let album of albums">
+        <div class="card mb-4 shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="https://loremflickr.com/359/218/sea?lock={{ album.id }}" alt="">
+            <div class="card-body">
+                <p class="card-text">{{ album.title }}</p>
+            </div>
+        </div>
+    </div>
+</div>

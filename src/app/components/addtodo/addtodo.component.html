@@ -1,0 +1,18 @@
+<form class="" type="submit" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <mat-form-field style="width: 380px;" appearance="fill">
+            <input
+                matInput
+                type="text"
+                name="title"
+                [(ngModel)]="title"
+                placeholder="Your Todo Here..."
+            >
+        </mat-form-field>
+        <button type="submit" mat-fab aria-label="Example icon button with a heart icon" class="mat-focus-indicator mat-fab mat-button-base mat-accent mat-primary">
+            <span class="mat-button-wrapper">
+                <mat-icon _ngcontent-dof-c163="" role="img" class="mat-icon notranslate material-icons mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">more</mat-icon>
+            </span>
+        </button>
+    </div>
+</form>
